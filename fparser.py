@@ -64,4 +64,4 @@ pwList = np.array(pwList)
 # Print as csv with delimiter | since , often in pws
 for i in indices:
 	output = urlList[i][0]+'|'+urlList[i][1]+urlList[i][2]+'|'+uList[i]+'|'+pwList[i]
-	print(output.encode('utf-8'))
+	print(output.encode('utf-8').decode())

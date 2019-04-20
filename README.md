@@ -5,7 +5,8 @@ Additionally, it separates the URL into 2 parts (`https://www.` and `example.com
 
 # Howto
 
-First, you need to obtain the passwords from firefox. You can use the following javascript code from [here](https://support.mozilla.org/de/questions/1077630#answer-834769) in the JavaScript console of Firefox after setting `devtools.chrome.enabled` to `true` in `about:config` (Credit to  cor-el from support.mozilla.org).
+First, you need to obtain the passwords from firefox. For this, I follow the guide from [here](https://support.mozilla.org/de/questions/1077630#answer-834769) (Creative commons, credit to  cor-el from support.mozilla.org).
+Set `devtools.chrome.enabled` to `true` in `about:config` and open the console ("Browser Konsole" in German) via 3-bar menu -> Web Developer (or Ctrl+Shift+J). Then paste the following javascript code:
 
     /* export the names and passwords in JSON format to firefox-logins.json */
     var tokendb = Cc["@mozilla.org/security/pk11tokendb;1"].createInstance(Ci.nsIPK11TokenDB);
